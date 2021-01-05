@@ -1,0 +1,206 @@
+@font-face {
+	font-family: 'Gilroy-Semibold';
+	src: url('../fonts/Gilroy-SemiBold.eot');
+	src: url('../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Gilroy-SemiBold.woff') format('woff'),
+	url('Gilroy-SemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	background:#ffffff;
+}
+body {
+	color: #000;
+	margin: 0 auto;
+	width: 100%;
+	background: #ffffff;
+	font-family: 'Gilroy-Semibold', sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+/*=====General reset=====*/
+h1, h2, h3, h4, h5, h6, p{margin:0;}
+ul, ol{margin:0;padding:0;list-style:none;}
+a{color:#1D57A5;text-decoration:none;outline:none;}
+a:hover, a:visited, a:link, a:active{outline:none;text-decoration:none;}
+*{-moz-box-sizing: border-box;box-sizing: border-box;}
+img{max-width: 100%;}
+/*=======================*/
+h1 {
+	font-size: 60px;
+    line-height: 1;
+    color: #000;
+    margin-bottom: 143px;
+}
+p {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.3px;
+}
+button.btn,
+a.btn {
+	color: #fff;
+	font-size: 16px;
+	line-height: 64px;
+	height: 64px;
+	background: linear-gradient(89.68deg, #F56975 0.28%, #FF7B52 100.89%);
+	box-shadow: 0px 4px 6px -1px rgba(245, 105, 117, 0.27);
+	border-radius: 8px;
+	padding: 0 24px;
+	padding-right: 47px;
+	display: inline-block;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+	margin: 0;
+	position: relative;
+}
+button.btn:after,
+a.btn:after {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 11px;
+	right: 24px;
+	top: 50%;
+	margin-top: -5.5px;
+	background: url(../img/arrow-btn.svg) no-repeat;
+}
+button.btn:hover,
+a.btn:hover {
+	background: linear-gradient(89.68deg, #FF7B52 100.89%, #F56975 0.28%);
+}
+.container {
+	width: 1280px;
+	margin: 0 auto;
+}
+/*======================*/
+main.main {
+	padding: 50px 0;
+}
+.transport-form-container {
+	position: relative;
+}
+.btn-close {
+	position: absolute;
+	right: 14px;
+	top: 37px;
+	cursor: pointer;
+}
+.btn-close > span {
+	height: 4px;
+	width: 55px;
+	background: #c0c0c0;
+	display: block;
+	position: relative;
+	transform: rotate(45deg);
+}
+.btn-close > span + span {
+	transform: rotate(-45deg);
+	top: -4px;
+}
+.transport-form {
+	display: flex;
+	justify-content: space-between;
+}
+.form-col {
+	flex: 0 1 377px;
+}
+.form-col label {
+	width: 100%;
+	display: block;
+	padding: 0 20px;
+	color: #848484;
+	font-size: 18px;
+	margin-bottom: 13px;
+}
+.form-col input {
+	width: 100%;
+	display: block;
+	height: 64px;
+	padding: 0 20px;
+	border: 1px solid #dadada;
+	border-radius: 0;
+	font-size: 16px;
+	color: #666;
+	outline: none;
+	margin-bottom: 26px;
+	padding-top: 8px;
+}
+input[type="text"]::-webkit-input-placeholder {color: #bfbfbf;}
+input[type="text"]::-moz-placeholder          {color: #bfbfbf;}
+input[type="text"]:-moz-placeholder           {color: #bfbfbf;}
+input[type="text"]:-ms-input-placeholder      {color: #bfbfbf;}
+input[type="text"]:focus::-webkit-input-placeholder {color:transparent;}
+input[type="text"]:focus::-moz-placeholder          {color:transparent;}
+input[type="text"]:focus:-moz-placeholder           {color:transparent;}
+input[type="text"]:focus:-ms-input-placeholder      {color:transparent;}
+.form-col button[type="submit"] {
+	width: 327px;
+	height: 71px;
+	display: block;
+	background-color: #41a2d0;
+	background-image: url(../img/arrow-btn.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+	text-align: left;
+	letter-spacing: 0.2px;
+	margin-top: 56px;
+	padding-top: 5px;
+	padding-left: 61px;
+	outline: none;
+	cursor: pointer;
+}
+
+@media (max-width: 1279px) {
+	.container {
+		width: 980px;
+	}
+	.form-col {
+		flex: 0 1 30%;
+	}
+	.form-col button[type="submit"] {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1023px) {
+	.container {
+		width: 750px;
+	}
+	.form-col button[type="submit"] {
+		padding-left: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		width: 100%;
+		padding: 0 15px;
+	}
+	.transport-form {
+		display: block;
+	}
+	.form-col button[type="submit"] {
+		padding-left: 61px;
+	}
+}
+
+@media (max-width: 639px) {
+	h1 {
+		font-size: 40px;
+	}
+}
+
+
+div.cbalink,
+div[style="margin: 0 20% !important; text-align:center !important;font-size:16px !important;font-family:arial !important;background-color:black !important;color:white !important"] {display:none !important;}
+
+
+
